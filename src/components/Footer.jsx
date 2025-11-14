@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
 
     return (
@@ -14,17 +16,17 @@ export default function Footer() {
                             <ul className="list-unstyled">
                                 <h4 className="mb-3 fw-bold fs-3">Menu</h4>
                                 <li>
-                                    <a href="">Home</a>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li>
-                                    <a href="">Chi Siamo</a>
+                                    <Link to="/contacts">Chi Siamo</Link>
                                 </li>
                                 <li>
-                                    <a href="">Prodotti</a>
+                                    <Link to="/products">Prodotti</Link>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col pb-3">
+                        <div className="col">
                             <div className="card bg-dark">
                                 <div className="card-header text-white">
                                     <cite>Il nostro team è tra i migliori nel settore!</cite>
