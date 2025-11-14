@@ -7,12 +7,12 @@ export default function Footer() {
             <footer className="bg-dark">
                 <div className="container">
                     <div className="row py-5 text-white">
-                        <div className="col ">
+                        <div className="col-6 col-md-4 pe-5">
                             <h3>AMAZONANDO</h3>
-                            <p className="pe-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam quo delectus autem eius earum mollitia consequuntur ullam deserunt totam!
+                            <p className="ps-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam quo delectus autem eius earum mollitia consequuntur ullam deserunt totam!
                             </p>
                         </div>
-                        <div className="col">
+                        <div className="col-6 col-md-2">
                             <ul className="list-unstyled">
                                 <h4 className="mb-3 fw-bold fs-3">Menu</h4>
                                 <li>
@@ -26,12 +26,12 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col">
-                            <div className="card bg-dark">
-                                <div className="card-header text-white">
-                                    <cite>Il nostro team è tra i migliori nel settore!</cite>
+                        <div className="col-12 col-md-6">
+                            <div className="card bg-dark align-items-center">
+                                <div className="text-white">
+                                    <p className="text-center mb-3">Il nostro team è tra i migliori nel settore!</p>
+                                    <img src="https://images.ctfassets.net/pdf29us7flmy/VC26zIItrakn8Xp435ICR/96da289096ff3440126112e75e43dc70/GettyImages-966267126-optimized.png?w=720&q=100&fm=jpg" alt="" className="card-img-top" />
                                 </div>
-                                <img src="https://images.ctfassets.net/pdf29us7flmy/VC26zIItrakn8Xp435ICR/96da289096ff3440126112e75e43dc70/GettyImages-966267126-optimized.png?w=720&q=100&fm=jpg" alt="" className="card-img-top rounded-5 pt-3" />
 
 
                             </div>

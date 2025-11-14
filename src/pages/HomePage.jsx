@@ -9,7 +9,7 @@ export default function HomePage({ data }) {
         <>
             <main className="bg-light">
                 <Jumbotron />
-                <div className="container p-4">
+                <div className="container p-5">
                     <BestSeller arrModif={arrModif} />
                 </div>
             </main>

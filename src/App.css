@@ -41,3 +41,18 @@ img {
 .img-container {
     background-image: url("https://t3.ftcdn.net/jpg/02/36/23/66/360_F_236236696_mTYBnVvXVykDspnSwLdzo16jqjdVLdXy.jpg");
 }
+
+/* FOOTER */
+
+footer {
+    .card {
+        border: none;
+
+        .card-img-top {
+            border-radius: 20%;
+            height: 200px;
+            border: 1px solid white;
+            width: auto;
+        }
+    }
+}
