@@ -17,17 +17,12 @@ h4~li {
     margin-top: 0.6rem;
 }
 
-img {
-    /* min-height: 250px;
-    max-height: 350px; */
-    object-fit: contain;
-    height: 250px;
-}
+/* UTILS */
 
 /* JUMBO */
 
 .jumbotron {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("./assets/pattern-obj.PNG");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url("./assets/pattern-obj.PNG");
     background-position: top;
     background-repeat: repeat;
     background-color: rgba(0, 0, 0, 0.3) !important;
@@ -39,7 +34,13 @@ img {
 }
 
 .img-container {
+    height: 350px;
     background-image: url("https://t3.ftcdn.net/jpg/02/36/23/66/360_F_236236696_mTYBnVvXVykDspnSwLdzo16jqjdVLdXy.jpg");
+
+    .card-img-top {
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 /* FOOTER */
