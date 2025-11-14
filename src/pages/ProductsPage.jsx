@@ -1,9 +1,19 @@
-export default function ProductsPage() {
+export default function ProductsPage({ setActiveCategory, uniqueCategories, search, setSearch }) {
 
 
     return (
         <>
-            <h1>ciao prodotti</h1>
+            <form className="form-inline p-3" >
+                <label className="my-1 me-3" htmlFor="categorySelect">Categorie:</label>
+                <select className="custom-select my-1 mr-sm-2 p-2" id="categorySelect" onChange={e => (setActiveCategory(e.target.value))} >
+                    {uniqueCategories.map(cat => (
+                        <option key={cat} value={cat}>{cat}</option>
+                    ))}
+                </select>
+                <div className="input-group my-3">
+                    <input type="text" className="form-control" placeholder="Search for title..." value={search} onChange={e => setSearch(e.target.value)} />
+                </div>
+            </form>
         </>
     )
 }

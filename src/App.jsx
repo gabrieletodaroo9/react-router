@@ -10,8 +10,11 @@ import axios from 'axios'
 export default function App() {
 
   const [data, setData] = useState([])
+  const [activeCategory, setActiveCategory] = useState("tutte le categorie")
+  const [search, setSearch] = useState("")
 
   const endpoint = "https://fakestoreapi.com/products"
+
 
 
   useEffect(() => {
@@ -25,10 +28,19 @@ export default function App() {
           };
         });
         setData(modifiedData);
+
       })
       .catch(err => console.log(err));
 
   }, [])
+
+  const uniqueCategories = []
+  data.forEach(obj => {
+    if (!uniqueCategories.includes(obj.category))
+      uniqueCategories.push(obj.category)
+  })
+
+
 
   return (
     <>
@@ -38,7 +50,7 @@ export default function App() {
           <Route element={<DefaultLayout />}>
             <Route index element={<HomePage data={data} />} />
             <Route path='/contacts' element={<ContactsPage />} />
-            <Route path='/products' element={<ProductsPage />} />
+            <Route path='/products' element={<ProductsPage setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
 
           </Route>
 
