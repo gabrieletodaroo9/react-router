@@ -17,6 +17,13 @@ h4~li {
     margin-top: 0.6rem;
 }
 
+img {
+    /* min-height: 250px;
+    max-height: 350px; */
+    object-fit: contain;
+    height: 250px;
+}
+
 /* JUMBO */
 
 .jumbotron {
@@ -24,4 +31,13 @@ h4~li {
     background-position: top;
     background-repeat: repeat;
     background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* CARD */
+.card {
+    background-color: #e7e3da;
+}
+
+.img-container {
+    background-image: url("https://t3.ftcdn.net/jpg/02/36/23/66/360_F_236236696_mTYBnVvXVykDspnSwLdzo16jqjdVLdXy.jpg");
 }

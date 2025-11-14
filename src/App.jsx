@@ -4,8 +4,31 @@ import HomePage from './pages/HomePage'
 import DefaultLayout from './layouts/DefaultLayout'
 import ContactsPage from './pages/ContactsPage'
 import ProductsPage from './pages/ProductsPage'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 export default function App() {
+
+  const [data, setData] = useState([])
+
+  const endpoint = "https://fakestoreapi.com/products"
+
+
+  useEffect(() => {
+    axios.get(endpoint)
+      .then(res => {
+        const modifiedData = res.data.map(obj => {
+          const shortDescription = obj.description.split(" ").length > 20 ? obj.description.split(" ").slice(0, 20).join(" ") + '...' : obj.description
+          return {
+            ...obj,
+            description: shortDescription
+          };
+        });
+        setData(modifiedData);
+      })
+      .catch(err => console.log(err));
+
+  }, [])
 
   return (
     <>
@@ -13,7 +36,7 @@ export default function App() {
         <Routes>
 
           <Route element={<DefaultLayout />}>
-            <Route index element={<HomePage />} />
+            <Route index element={<HomePage data={data} />} />
             <Route path='/contacts' element={<ContactsPage />} />
             <Route path='/products' element={<ProductsPage />} />
 
