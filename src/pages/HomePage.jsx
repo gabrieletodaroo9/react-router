@@ -1,10 +1,11 @@
+
 export default function HomePage() {
 
 
     return (
         <>
-            <h1>ciao amici</h1>
-
-        </>
+            <h1>ciao</h1>
+            <p>come va</p>
+            amicone    </>
     )
 }
