@@ -6,3 +6,9 @@ a {
 h4~li {
     margin-top: 0.6rem;
 }
+
+.jumbotron {
+    background-image: url("./assets/pattern-obj.PNG");
+    background-position: top;
+    background-repeat: repeat;
+}
