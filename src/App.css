@@ -19,6 +19,16 @@ h4~li {
 
 /* UTILS */
 
+.logo {
+    height: 40px !important;
+    width: 170px !important;
+}
+
+.logo-footer {
+    height: 70px !important;
+    width: 280px !important;
+}
+
 /* JUMBO */
 
 .jumbotron {
@@ -52,7 +62,7 @@ footer {
         .card-img-top {
             border-radius: 20%;
             height: 200px;
-            border: 1px solid white;
+            border: 1px solid lightgray;
             width: auto;
         }
     }

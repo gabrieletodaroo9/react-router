@@ -11,7 +11,7 @@ export default function Jumbotron({ topShadow }) {
                 <p className="col-md-8 fs-4 text-center mb-3">
                     Il nostro vero prodotto è la fiducia. Dalla selezione all'acquisto, fino alla consegna alla tua porta, lavoriamo per rendere ogni click su Amazonando una garanzia di qualità, sicurezza e soddisfazione.
                 </p>
-                <button className="btn btn-primary btn-lg p-4 rounded-pill" type="button">
+                <button className="btn btn-dark btn-lg px-3 py-2 rounded-pill" type="button">
                     <Link to="/products">Scopri i prodotti!</Link>
                 </button>
             </div>

@@ -10,11 +10,17 @@ import axios from 'axios'
 export default function App() {
 
   const [data, setData] = useState([])
-  const [activeCategory, setActiveCategory] = useState("tutte le categorie")
+  const [activeCategory, setActiveCategory] = useState("Tutte le categorie")
   const [search, setSearch] = useState("")
+  const [filtered, setFiltered] = useState([])
 
   const endpoint = "https://fakestoreapi.com/products"
 
+  const uniqueCategories = ["Tutte le categorie"]
+  data.forEach(obj => {
+    if (!uniqueCategories.includes(obj.category))
+      uniqueCategories.push(obj.category)
+  })
 
 
   useEffect(() => {
@@ -34,11 +40,16 @@ export default function App() {
 
   }, [])
 
-  const uniqueCategories = []
-  data.forEach(obj => {
-    if (!uniqueCategories.includes(obj.category))
-      uniqueCategories.push(obj.category)
-  })
+  useEffect(() => {
+
+    let current = data;
+    if (activeCategory !== "Tutte le categorie") {
+      current = current.filter(obj => obj.category === activeCategory)
+    }
+    const searchFiltered = current.filter(obj => obj.title.toLowerCase().includes(search.toLowerCase()))
+    setFiltered(searchFiltered)
+  }, [activeCategory, search, data])
+
 
 
 
@@ -50,7 +61,7 @@ export default function App() {
           <Route element={<DefaultLayout />}>
             <Route index element={<HomePage data={data} />} />
             <Route path='/contacts' element={<ContactsPage />} />
-            <Route path='/products' element={<ProductsPage setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
+            <Route path='/products' element={<ProductsPage filtered={filtered} setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
 
           </Route>
 

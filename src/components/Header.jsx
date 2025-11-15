@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Header() {
 
@@ -10,7 +11,7 @@ export default function Header() {
                     <NavLink className="nav-link" to="/contacts">Chi Siamo</NavLink>
                     <NavLink className="nav-link" to="/products">Prodotti</NavLink>
                 </div>
-                <NavLink className="navbar-brand fs-3" to="/">AMAZONANDO </NavLink>
+                <Logo isHeader={true} />
 
             </div>
         </nav>
