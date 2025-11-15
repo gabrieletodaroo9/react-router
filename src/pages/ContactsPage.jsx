@@ -5,9 +5,9 @@ export default function ContactsPage() {
 
     return (
         <>
-            <main className="bg-light">
+            <main className="bg-second text-first">
                 <div className="container p-5">
-                    <div className="row g-5">
+                    <div className="row g-5 fs-4">
                         <div className="col-6 d-flex flex-column align-items-center p-4">
                             <img src="https://www.barchemagazine.com/wp-content/uploads/2018/06/Team-For-Design.jpg" alt="" className="img-contacts rounded-pill img-fluid pb-2" />
                             <cite className="text-center pt-3 fw-bold">'In Amazonando non vendiamo solo prodotti: offriamo la libertà di scegliere.'</cite>
@@ -39,9 +39,9 @@ export default function ContactsPage() {
                         </div>
                     </div>
                 </div>
-                <Jumbotron topShadow={true} />
             </main>
 
+            <Jumbotron topShadow={true} />
         </>
     )
 }

@@ -10,13 +10,13 @@ import axios from 'axios'
 export default function App() {
 
   const [data, setData] = useState([])
-  const [activeCategory, setActiveCategory] = useState("Tutte le categorie")
+  const [activeCategory, setActiveCategory] = useState("All categories")
   const [search, setSearch] = useState("")
   const [filtered, setFiltered] = useState([])
 
   const endpoint = "https://fakestoreapi.com/products"
 
-  const uniqueCategories = ["Tutte le categorie"]
+  const uniqueCategories = ["All categories"]
   data.forEach(obj => {
     if (!uniqueCategories.includes(obj.category))
       uniqueCategories.push(obj.category)
@@ -43,7 +43,7 @@ export default function App() {
   useEffect(() => {
 
     let current = data;
-    if (activeCategory !== "Tutte le categorie") {
+    if (activeCategory !== "All categories") {
       current = current.filter(obj => obj.category === activeCategory)
     }
     const searchFiltered = current.filter(obj => obj.title.toLowerCase().includes(search.toLowerCase()))

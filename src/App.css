@@ -29,6 +29,30 @@ h4~li {
     width: 280px !important;
 }
 
+.form-control {
+    border: 2px solid black;
+}
+
+.bg-first {
+    background-color: #102542;
+}
+
+.text-first {
+    color: #102542;
+}
+
+.bg-second {
+    background-color: #F87060;
+}
+
+.bg-third {
+    background-color: #CDD7D6;
+}
+
+.bg-four {
+    background-color: #fafafa;
+}
+
 /* JUMBO */
 
 .jumbotron {
@@ -51,19 +75,21 @@ h4~li {
         height: 100%;
         object-fit: contain;
     }
+
+
+}
+
+.position-absolute {
+    top: 299px;
+    left: 3px;
 }
 
 /* FOOTER */
 
 footer {
-    .card {
-        border: none;
-
-        .card-img-top {
-            border-radius: 20%;
-            height: 200px;
-            border: 1px solid lightgray;
-            width: auto;
-        }
+    img {
+        border-radius: 20%;
+        height: 200px;
+        /* width: auto; */
     }
 }

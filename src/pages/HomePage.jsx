@@ -7,7 +7,7 @@ export default function HomePage({ data }) {
 
     return (
         <>
-            <main className="bg-light">
+            <main className="bg-second">
                 <Jumbotron topShadow={false} />
                 <div className="container p-5">
                     <BestSeller arrModif={arrModif} />
