@@ -1,6 +1,7 @@
 /* RESET */
 
 * {
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,8 +50,41 @@ h4~li {
     background-color: #CDD7D6;
 }
 
+.text-third {
+    color: #CDD7D6;
+}
+
 .bg-four {
     background-color: #fafafa;
+}
+
+.RobotoCondensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+}
+
+.edu-tas-beginner {
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 500;
+}
+
+
+.comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.momo-signature-regular {
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* JUMBO */
