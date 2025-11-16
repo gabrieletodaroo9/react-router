@@ -1,4 +1,4 @@
-import Banner from "../components/Banner";
+import BannerUCL from "../components/BannerUCL";
 import BestSeller from "../components/BestSeller";
 import Jumbotron from "../components/Jumbotron";
 import BlackFridayBanner from "../components/BlackFridayBanner";
@@ -10,11 +10,9 @@ export default function HomePage({ bestSellers }) {
             <main className="bg-second">
 
                 <Jumbotron topShadow={false} />
-                <div className="container  py-5">
-                    <BestSeller bestSellers={bestSellers} />
-                </div>
+                <BestSeller bestSellers={bestSellers} />
                 <BlackFridayBanner />
-                <Banner />
+                <BannerUCL />
 
             </main>
 

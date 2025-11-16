@@ -16,14 +16,5 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-## FOR TOMORROW
-
-# creare card in home dinamiche (rate) fatto
-# creare banner con un immagine champions league fatto
-# aggiungere alert sconti black friday fatto
-# sistemare immagini sezione chi siamo fatto
-# sistemare footer fatto
-# controllare responsivity
 # controllare la sintassi/ ripetizioni
 # aggiungere qualche effetto all'hover
-# provare a creare qualche card di esempio

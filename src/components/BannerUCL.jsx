@@ -1,4 +1,4 @@
-export default function Banner() {
+export default function BannerUCL() {
     return (<div className="container-banner bg-first">
         <div className="banner">
             <div className="container">
