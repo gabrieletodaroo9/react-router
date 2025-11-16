@@ -1,4 +1,6 @@
+import Banner from "../components/Banner";
 import Jumbotron from "../components/Jumbotron";
+import BlackFridayBanner from "../components/BlackFridayBanner"
 
 export default function ContactsPage() {
 
@@ -8,16 +10,16 @@ export default function ContactsPage() {
             <main className="bg-second text-first">
                 <div className="container p-5">
                     <div className="row g-5 fs-4 align-item-start">
-                        <div className="col-6 d-flex flex-column align-items-center p-4">
-                            <img src="https://www.barchemagazine.com/wp-content/uploads/2018/06/Team-For-Design.jpg" alt="" className="img-contacts rounded-pill img-fluid pb-2" />
-                            <cite className="text-center pt-3 fw-bold edu-tas-beginner">'In Amazonando non vendiamo solo prodotti: offriamo la liberta' di scegliere.'</cite>
+                        <div className="col-6 d-flex flex-column align-items-center p-5">
+                            <img src="https://www.barchemagazine.com/wp-content/uploads/2018/06/Team-For-Design.jpg" alt="" className="img-contacts rounded-5 img-fluid pb-2" />
+                            <cite className="text-center pt-3 fw-bold edu-tas-beginner">'In Amazonando non vendiamo solo prodotti: ti offriamo la liberta' di scegliere la tua strada.'</cite>
                         </div>
-                        <div className="col-6 d-flex flex-column align-items-center p-4">
-                            <img src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaWduJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="" className="img-contacts rounded-pill img-fluid pb-2" />
-                            <cite className="text-center pt-3 fw-bold mb-4v edu-tas-beginner">'Il nostro vero prodotto è la fiducia. Dalla selezione all'acquisto, fino alla consegna alla tua porta.'</cite>
+                        <div className="col-6 d-flex flex-column align-items-center p-5">
+                            <img src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaWduJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="" className="img-contacts rounded-5 img-fluid pb-2" />
+                            <cite className="text-center pt-3 fw-bold mb-4v edu-tas-beginner">'Il nostro vero prodotto e' la fiducia. Dalla selezione all'acquisto, fino alla consegna alla tua porta.'</cite>
                         </div>
                     </div>
-                    <div className="row g-3">
+                    <div className="row g-3 pt-5">
                         <div className="col-12 d-flex flex-column align-items-center justify-content-center text-center">
                             <h2 className="RobotoCondensed">Chi Siamo: La Nostra Missione in Amazonando</h2>
                             <p className="fs-5">Benvenuti in Amazonando, la vostra destinazione unica per l'acquisto di tutto ciò che desiderate! Siamo nati dalla semplice idea che trovare prodotti di qualità, dal più essenziale al più sorprendente, non dovrebbe richiedere di navigare in un labirinto di siti web. Che si tratti di un gadget hi-tech, un capo di abbigliamento, l'ultimo libro o un utensile per la casa, il nostro obiettivo è offrirvi una selezione vasta e curata, unita alla semplicità di un click. Amazonando non è solo un e-commerce: è il vostro marketplace personale, costruito sulla fiducia, sulla convenienza e sull'impegno costante di rendere il vostro shopping online un'esperienza semplice, veloce e appagante.</p>
@@ -42,6 +44,7 @@ export default function ContactsPage() {
             </main>
 
             <Jumbotron topShadow={true} />
+            <BlackFridayBanner />
         </>
     )
 }

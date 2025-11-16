@@ -19,9 +19,9 @@ If you are developing a production application, we recommend using TypeScript wi
 ## FOR TOMORROW
 
 # creare card in home dinamiche (rate) fatto
-# creare banner con un immagine di un team
-# aggiungere alert sconti black friday
-# sistemare immagini sezione chi siamo 
+# creare banner con un immagine champions league fatto
+# aggiungere alert sconti black friday fatto
+# sistemare immagini sezione chi siamo fatto
 # sistemare descrizione card
 # sistemare footer
 # controllare la sintassi ripetizioni
