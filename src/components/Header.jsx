@@ -11,6 +11,7 @@ export default function Header() {
                     <NavLink className="nav-link" to="/">Home</NavLink>
                     <NavLink className="nav-link" to="/contacts">Chi Siamo</NavLink>
                     <NavLink className="nav-link" to="/products">Prodotti</NavLink>
+                    <NavLink className="nav-link" to="/faqs">Faqs</NavLink>
                 </div>
             </div>
         </nav>

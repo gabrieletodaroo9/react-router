@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import DefaultLayout from './layouts/DefaultLayout'
 import ContactsPage from './pages/ContactsPage'
 import ProductsPage from './pages/ProductsPage'
+import FaqsPage from './pages/FaqsPage'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -67,7 +68,7 @@ export default function App() {
             <Route index element={<HomePage bestSellers={bestSellers} />} />
             <Route path='/contacts' element={<ContactsPage />} />
             <Route path='/products' element={<ProductsPage filtered={filtered} setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
-
+            <Route path='/faqs' element={<FaqsPage />} />
           </Route>
 
         </Routes>

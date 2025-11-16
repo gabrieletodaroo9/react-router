@@ -14,8 +14,8 @@ export default function Footer() {
                                 <ul className="list-unstyled text-white">
                                     <li className="fw-bold fs-5 pb-2"><Link to="/">Home</Link></li>
                                     <li className="fw-bold fs-5 pb-2"><Link to="/contacts">Chi Siamo</Link></li>
-                                    <li className="fw-bold fs-5"><Link to="/products">Prodotti</Link></li>
-
+                                    <li className="fw-bold fs-5 pb-2"><Link to="/products">Prodotti</Link></li>
+                                    <li className="fw-bold fs-5"><Link to="/faqs">Faqs</Link></li>
                                 </ul>
 
 
