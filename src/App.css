@@ -106,7 +106,7 @@ select {
 }
 
 .rotate {
-    transform: rotate(20deg);
+    transform: rotate(10deg);
     display: inline-block;
     margin-top: 2rem;
     transition: transform 1s ease;
@@ -116,8 +116,8 @@ select {
     height: 200px;
 }
 
-.bf-banner:hover .rotate {
-    transition: all 2s ease;
+.toRotate:hover .rotate {
+    transition: all 1.5s ease;
     transform: rotateY(180deg);
 }
 
@@ -282,7 +282,7 @@ footer {
         font-size: 1rem !important;
     }
 
-    .rotate {
+    .toRotate:nth-child(2) {
         display: none;
     }
 
