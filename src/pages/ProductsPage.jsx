@@ -10,7 +10,7 @@ export default function ProductsPage({ setActiveCategory, uniqueCategories, sear
                 <Banner />
                 <div className="container p-3">
                     <h2 className="text-center text-first fs-1 fw-bold pt-4 RobotoCondensed">I nostri prodotti</h2>
-                    <form className="d-flex align-items-center p-3" >
+                    <form className="d-flex align-items-center p-3 " >
                         <label className="my-1 me-2 fw-bold comic-neue-bold" htmlFor="categorySelect">Category:</label>
                         <select className="custom-select my-1 mr-sm-2 p-2 me-5 rounded-pill comic-neue-bold" id="categorySelect" onChange={e => (setActiveCategory(e.target.value))} >
                             {uniqueCategories.map(cat => (

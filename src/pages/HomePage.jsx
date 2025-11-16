@@ -10,7 +10,7 @@ export default function HomePage({ bestSellers }) {
             <main className="bg-second">
 
                 <Jumbotron topShadow={false} />
-                <div className="container p-5">
+                <div className="container  py-5">
                     <BestSeller bestSellers={bestSellers} />
                 </div>
                 <BlackFridayBanner />

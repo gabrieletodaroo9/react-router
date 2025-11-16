@@ -1,4 +1,4 @@
-/* RESET */
+/*#region RESET */
 
 * {
     font-family: "Roboto Condensed", sans-serif;
@@ -7,7 +7,47 @@
     box-sizing: border-box;
 }
 
-/* GENERICS */
+/*#endregion RESET */
+
+/*#region FONTS */
+
+.RobotoCondensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+}
+
+.edu-tas-beginner {
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 500;
+}
+
+
+.comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.momo-signature-regular {
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.league-gothic {
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+}
+
+/* #endregion FONTS */
+
+/*#region GENERICS */
 
 a {
     color: white;
@@ -18,7 +58,9 @@ h4~li {
     margin-top: 0.6rem;
 }
 
-/* UTILS */
+/*#endregion GENERICS */
+
+/*#region UTILS */
 
 .logo {
     height: 50px !important;
@@ -57,6 +99,7 @@ h4~li {
 .rotate {
     transform: rotate(20deg);
     display: inline-block;
+    margin-top: 2rem;
 }
 
 .rounded-card {
@@ -64,41 +107,9 @@ h4~li {
     overflow: hidden;
 }
 
-.RobotoCondensed {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 900;
-}
+/*#endregion UTILS */
 
-.edu-tas-beginner {
-    font-family: "Edu TAS Beginner", cursive;
-    font-weight: 500;
-}
-
-
-.comic-neue-bold {
-    font-family: "Comic Neue", cursive;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.momo-signature-regular {
-    font-family: "Momo Signature", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.league-gothic {
-    font-family: "League Gothic", sans-serif;
-    font-weight: 400;
-}
-
-/* JUMBO */
+/*#region JUMBO */
 
 .jumbotron {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url("./assets/pattern-obj.PNG");
@@ -109,7 +120,9 @@ h4~li {
     word-spacing: 0.4rem;
 }
 
-/* BANNER */
+/*#endregion JUMBO */
+
+/*#region BANNER */
 
 .banner {
     color: white;
@@ -125,7 +138,9 @@ h4~li {
     }
 }
 
-/* CARD */
+/*#endregion BANNER */
+
+/*#region CARD */
 .card {
     background-color: #e7e3da;
 }
@@ -148,7 +163,9 @@ h4~li {
     border: 1px solid lightgray;
 }
 
-/* FOOTER */
+/*#endregion CARD */
+
+/*#region FOOTER */
 
 footer {
     img {
@@ -157,3 +174,67 @@ footer {
         /* width: auto; */
     }
 }
+
+/*#endregion FOOTER */
+
+/* #region MEDIAQUERY */
+
+@media screen and (max-width:768px) {
+    .banner {
+        h1 {
+            font-size: 3rem !important;
+        }
+    }
+
+    .container-footer-resp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        .row {
+            flex-direction: column-reverse;
+        }
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .banner {
+
+        h1 {
+            padding-top: 3rem !important;
+            font-size: 2.7rem !important;
+        }
+    }
+
+    .navbar>.container-fluid {
+        flex-direction: column !important;
+
+        .logo {
+            padding-left: 1rem;
+            align-self: center;
+        }
+
+        .navbar-links {
+            flex-direction: row;
+            padding-top: 1rem;
+            width: 100%;
+            justify-content: space-around !important;
+        }
+    }
+
+    .bf-banner {
+        font-size: 1rem !important;
+    }
+
+    .rotate {
+        display: none;
+    }
+
+
+}
+
+/* #endregion MEDIAQUERY */
