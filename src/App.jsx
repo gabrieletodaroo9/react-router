@@ -29,7 +29,7 @@ export default function App() {
     axios.get(endpoint)
       .then(res => {
         const modifiedData = res.data.map(obj => {
-          const shortDescription = obj.description.split(" ").length > 10 ? obj.description.split(" ").slice(0, 10).join(" ") + '...' : obj.description
+          const shortDescription = obj.description.split(" ").length > 20 ? obj.description.split(" ").slice(0, 20).join(" ") + '...' : obj.description
           return {
             ...obj,
             description: shortDescription
