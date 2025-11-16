@@ -13,6 +13,7 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState("All categories")
   const [search, setSearch] = useState("")
   const [filtered, setFiltered] = useState([])
+  const [bestSellers, setBestSellers] = useState([]);
 
   const endpoint = "https://fakestoreapi.com/products"
 
@@ -50,7 +51,11 @@ export default function App() {
     setFiltered(searchFiltered)
   }, [activeCategory, search, data])
 
-
+  useEffect(() => {
+    const highRated = data.filter(obj => obj.rating.rate >= 4.5)
+    const top4BestSellers = highRated.slice(0, 4)
+    setBestSellers(top4BestSellers)
+  }, [data])
 
 
   return (
@@ -59,7 +64,7 @@ export default function App() {
         <Routes>
 
           <Route element={<DefaultLayout />}>
-            <Route index element={<HomePage data={data} />} />
+            <Route index element={<HomePage bestSellers={bestSellers} />} />
             <Route path='/contacts' element={<ContactsPage />} />
             <Route path='/products' element={<ProductsPage filtered={filtered} setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
 
