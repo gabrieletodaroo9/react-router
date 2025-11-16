@@ -4,14 +4,14 @@ export default function BlackFridayBanner() {
     return (
         <>
             <div className="bg-first text-white">
-                <div className="bf-banner container-fluid container-lg d-flex justify-content-between align-items-center py-5 ">
+                <div className="bf-banner container-fluid container-lg d-flex justify-content-between align-items-center ">
                     <div>
                         <h1 className="fw-bold me-5">
                             <span className="text-danger">BLACK </span>FRIDAY <span className="text-danger">WEEK</span>
                         </h1>
                     </div>
                     <div>
-                        <p className="fs-2 fw-bold rotate">
+                        <p className="fs-2 fw-bold rotate py-5">
                             FINO AL <span className="text-danger pe-5">70%</span>
                         </p>
                     </div>

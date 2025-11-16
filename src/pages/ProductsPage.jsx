@@ -11,7 +11,7 @@ export default function ProductsPage({ setActiveCategory, uniqueCategories, sear
                 <BannerUCL />
                 <FormFind setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />
 
-                <div className="container">
+                <div className="container pt-4">
                     <div className="row g-5 pb-5">
                         {
                             filtered.map(obj => (

@@ -109,6 +109,16 @@ select {
     transform: rotate(20deg);
     display: inline-block;
     margin-top: 2rem;
+    transition: transform 1s ease;
+}
+
+.bf-banner {
+    height: 200px;
+}
+
+.bf-banner:hover .rotate {
+    transition: all 2s ease;
+    transform: rotateY(180deg);
 }
 
 .rounded-card {
@@ -128,6 +138,7 @@ select {
 .btn-danger:hover {
     scale: 1.03;
 }
+
 
 /*#endregion UTILS */
 
