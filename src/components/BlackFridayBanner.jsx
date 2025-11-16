@@ -12,7 +12,7 @@ export default function BlackFridayBanner() {
                     </div>
                     <div className="toRotate">
                         <p className="fs-2 fw-bold rotate py-5">
-                            FINO AL <span className="text-danger pe-5">70%</span>
+                            FINO AL <span className="text-danger">70%</span>
                         </p>
                     </div>
                     <div>

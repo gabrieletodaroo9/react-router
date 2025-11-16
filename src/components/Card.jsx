@@ -7,7 +7,7 @@ export default function Card({ obj }) {
             <div className="card h-100 text-first rounded-card">
                 <div className="img-container p-3 position-relative">
                     <img src={obj.image} className="card-img-top" alt="..." />
-                    <span className="position-absolute card-text fw-bold text-dark fs-4 bg-second px-3 py-2 rounded-pill RobotoCondensed">{obj.price} €</span>
+                    <span className="position-absolute price card-text fw-bold text-dark fs-4 bg-second px-3 py-2 rounded-pill RobotoCondensed">{obj.price} €</span>
                 </div>
                 <div className="card-body px-3 bg-third px-4">
                     <h4 className="card-title text-first RobotoCondensed">{obj.title}</h4>
