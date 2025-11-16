@@ -8,6 +8,7 @@ export default function ContactsPage() {
     return (
         <>
             <main className="bg-second text-first">
+
                 <div className="container p-5">
                     <div className="row g-5 fs-4 align-item-start">
                         <div className="col-6 d-flex flex-column align-items-center p-5">
@@ -19,6 +20,9 @@ export default function ContactsPage() {
                             <cite className="text-center pt-3 fw-bold mb-4v edu-tas-beginner">'Il nostro vero prodotto e' la fiducia. Dalla selezione all'acquisto, fino alla consegna alla tua porta.'</cite>
                         </div>
                     </div>
+                </div>
+                <BlackFridayBanner />
+                <div className="container py-5">
                     <div className="row g-3 pt-5">
                         <div className="col-12 d-flex flex-column align-items-center justify-content-center text-center">
                             <h2 className="RobotoCondensed">Chi Siamo: La Nostra Missione in Amazonando</h2>
@@ -41,10 +45,10 @@ export default function ContactsPage() {
                         </div>
                     </div>
                 </div>
-            </main>
+            </main >
 
             <Jumbotron topShadow={true} />
-            <BlackFridayBanner />
+
         </>
     )
 }

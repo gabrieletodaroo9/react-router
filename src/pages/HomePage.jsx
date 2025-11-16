@@ -13,8 +13,9 @@ export default function HomePage({ bestSellers }) {
                 <div className="container p-5">
                     <BestSeller bestSellers={bestSellers} />
                 </div>
-                <Banner />
                 <BlackFridayBanner />
+                <Banner />
+
             </main>
 
 

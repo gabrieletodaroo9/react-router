@@ -22,9 +22,8 @@ If you are developing a production application, we recommend using TypeScript wi
 # creare banner con un immagine champions league fatto
 # aggiungere alert sconti black friday fatto
 # sistemare immagini sezione chi siamo fatto
-# sistemare descrizione card
-# sistemare footer
-# controllare la sintassi ripetizioni
+# sistemare footer fatto
 # controllare responsivity
+# controllare la sintassi/ ripetizioni
 # aggiungere qualche effetto all'hover
 # provare a creare qualche card di esempio

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function BlackFridayBanner() {
     return (
         <>
-            <div className="bg-dark text-white">
+            <div className="bg-first text-white">
                 <div className="container d-flex justify-content-between align-items-center py-5 px-5 ">
                     <div>
                         <h1 className="fw-bold">

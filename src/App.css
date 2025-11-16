@@ -21,8 +21,8 @@ h4~li {
 /* UTILS */
 
 .logo {
-    height: 40px !important;
-    width: 170px !important;
+    height: 50px !important;
+    width: 190px !important;
 }
 
 .logo-footer {
@@ -35,31 +35,28 @@ h4~li {
 }
 
 .bg-first {
-    background-color: #102542;
+    background-color: rgb(30, 28, 28);
 }
 
 .text-first {
-    color: #102542;
+    color: rgb(30, 28, 28);
 }
 
 .bg-second {
-    background-color: #F87060;
+    background-color: #f0f1f1;
 }
 
 .bg-third {
-    background-color: #CDD7D6;
+    background-color: #c9cacb;
 }
 
 .text-third {
-    color: #CDD7D6;
+    color: #c9cacb;
 }
 
-.bg-four {
-    background-color: #fafafa;
-}
-
-.bg-fifth {
-    background-color: #B3A394;
+.rotate {
+    transform: rotate(20deg);
+    display: inline-block;
 }
 
 .rounded-card {
@@ -148,6 +145,7 @@ h4~li {
 .position-absolute {
     bottom: 5px;
     left: 5px;
+    border: 1px solid lightgray;
 }
 
 /* FOOTER */
