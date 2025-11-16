@@ -65,11 +65,20 @@ h4~li {
 .logo {
     height: 50px !important;
     width: 190px !important;
+
+    &:hover {
+        scale: 1.03;
+    }
 }
 
 .logo-footer {
     height: 70px !important;
     width: 280px !important;
+
+}
+
+select {
+    cursor: pointer;
 }
 
 .form-control {
@@ -103,8 +112,21 @@ h4~li {
 }
 
 .rounded-card {
-    border-radius: 50px !important;
+    border-radius: 20px !important;
     overflow: hidden;
+
+    &:hover {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), 2px 2px 5px rgba(0, 0, 0, 0.05);
+        transition: box-shadow 0.5s ease;
+    }
+}
+
+.nav-link:hover {
+    scale: 1.03;
+}
+
+.btn-danger:hover {
+    scale: 1.03;
 }
 
 /*#endregion UTILS */
@@ -118,6 +140,10 @@ h4~li {
     background-color: rgba(0, 0, 0, 0.3) !important;
     letter-spacing: 0.3rem;
     word-spacing: 0.4rem;
+
+    .btn:hover {
+        scale: 1.03;
+    }
 }
 
 /*#endregion JUMBO */
@@ -131,6 +157,12 @@ h4~li {
     background-size: cover;
     background-position: bottom;
     height: 400px;
+    transition: all 3s ease;
+
+    &:hover {
+        transition: all 3s ease;
+        scale: 1.03;
+    }
 
     h1 {
         padding-top: 70px;
@@ -143,11 +175,16 @@ h4~li {
 /*#region CARD */
 .card {
     background-color: #e7e3da;
+
+    &:hover {
+        transition: all 0.3s ease;
+        scale: 1.03;
+    }
 }
 
 .img-container {
     height: 350px;
-    background-image: url("https://t3.ftcdn.net/jpg/02/36/23/66/360_F_236236696_mTYBnVvXVykDspnSwLdzo16jqjdVLdXy.jpg");
+    background-image: url("https://png.pngtree.com/background/20250208/original/pngtree-flawlessly-smooth-white-rectangular-texture-picture-image_15307159.jpg");
 
     .card-img-top {
         height: 100%;
@@ -168,6 +205,10 @@ h4~li {
 /*#region FOOTER */
 
 footer {
+    ul>*:hover {
+        scale: 1.03;
+    }
+
     img {
         border-radius: 20%;
         height: 200px;
