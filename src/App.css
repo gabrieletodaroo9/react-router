@@ -137,6 +137,9 @@ select {
     scale: 1.03;
 }
 
+.alert-danger {
+    height: 600px;
+}
 
 /*#endregion UTILS */
 
