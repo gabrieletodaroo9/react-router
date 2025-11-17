@@ -141,6 +141,11 @@ select {
     height: 600px;
 }
 
+.img-single-product {
+    max-height: 500px;
+    object-fit: contain;
+}
+
 /*#endregion UTILS */
 
 /*#region JUMBO */

@@ -31,11 +31,27 @@ export default function SingleProductPage() {
 
     return (
         <>
-            <h1>id:{currentProduct.id}</h1>
-            <img src={currentProduct.image} alt="" />
-            <h2>{currentProduct.title}</h2>
-            <p>{currentProduct.description}</p>
-            <Link to='/' className="btn btn-dark">Torna alla sezione prodotti</Link>
+            <main>
+                <div className="container py-5">
+                    <div className="row g-5 py-5">
+                        <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center p-5">
+                            <img className="w-100 img-single-product" src={currentProduct.image} alt="" />
+                        </div>
+                        <div className="col-12 col-lg-6 p-5 d-flex flex-column align-item-start justify-content-between">
+                            <span className="fs-1 fw-bold">{currentProduct.price} €</span>
+                            <h1>{currentProduct.title}</h1>
+                            <hr />
+                            <span>{currentProduct.category}</span>
+                            <hr />
+                            <span>{currentProduct.description}</span>
+                            <hr />
+                            <span className="pb-5">Quantità residua:{currentProduct.rating?.count}</span>
+                            <button className="btn btn-success py-2 fw-bold">Aggiungi al carrello</button>
+                            <Link to='/products' className="btn btn-dark py-2 fw-bold">Torna alla sezione prodotti</Link>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </>
     )
 }
