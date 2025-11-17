@@ -7,6 +7,9 @@ import ProductsPage from './pages/ProductsPage'
 import FaqsPage from './pages/FaqsPage'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import SingleProductPage from './pages/SingleProductPage'
+import ErrLayout from './layouts/ErrLayout'
+import ErrorPage from './pages/ErrPage'
 
 export default function App() {
 
@@ -69,6 +72,11 @@ export default function App() {
             <Route path='/contacts' element={<ContactsPage />} />
             <Route path='/products' element={<ProductsPage filtered={filtered} setActiveCategory={setActiveCategory} uniqueCategories={uniqueCategories} search={search} setSearch={setSearch} />} />
             <Route path='/faqs' element={<FaqsPage />} />
+            <Route path='/products/:id' element={<SingleProductPage />} />
+          </Route>
+
+          <Route element={<ErrLayout />}>
+            <Route path='/error' element={<ErrorPage />} />
           </Route>
 
         </Routes>

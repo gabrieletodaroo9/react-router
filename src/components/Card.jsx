@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Card({ obj }) {
 
     return (
-        <Link to="/" className="col-12 col-md-6 col-lg-3">
+        <Link to={`/products/${obj.id}`} className="col-12 col-md-6 col-lg-3">
             <div className="card h-100 text-first rounded-card">
                 <div className="img-container p-3 position-relative">
                     <img src={obj.image} className="card-img-top" alt="..." />
