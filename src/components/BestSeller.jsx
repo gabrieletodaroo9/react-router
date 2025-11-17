@@ -11,6 +11,7 @@ export default function BestSeller({ bestSellers }) {
                     {
                         bestSellers.map(obj =>
                             <Card key={obj.id} obj={obj} />
+
                         )
                     }
                 </div>
