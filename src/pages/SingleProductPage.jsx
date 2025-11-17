@@ -63,14 +63,14 @@ export default function SingleProductPage() {
                                         <div className="d-flex justify-content-between align-items-center">
                                             <span className="fs-4 fw-bold">{currentProduct.category}</span>
                                             <div className="me-2 ">
-                                                <span className=" fw-bold bg-success p-2 rounded-3 fs-4 me-3">{currentProduct.rating?.rate} </span>
+                                                <span className=" fw-bold bg-success p-2 rounded-3 fs-4 me-3">{currentProduct.rating.rate} </span>
                                                 <i className="bi bi-star-fill text-success fs-2 "></i>
                                             </div>
                                         </div>
                                         <hr />
                                         <span className="fs-5 fw-bold">{currentProduct.description}</span>
                                         <hr />
-                                        <span className="pb-5">Quantità residua:{currentProduct.rating?.count}</span>
+                                        <span className="pb-5">Quantità residua:{currentProduct.rating.count}</span>
                                         <button className="btn btn-success py-2 fw-bold">Aggiungi al carrello</button>
                                         <Link to='/products' className="btn btn-dark mt-2 py-2 fw-bold">Torna alla sezione prodotti</Link>
                                     </div>
