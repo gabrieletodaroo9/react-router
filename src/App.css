@@ -142,8 +142,24 @@ select {
 }
 
 .img-single-product {
-    max-height: 500px;
+    max-height: 400px;
     object-fit: contain;
+}
+
+.col-1:hover {
+    scale: 1.15;
+}
+
+.bg-img {
+    background-image: url("https://png.pngtree.com/background/20250208/original/pngtree-flawlessly-smooth-white-rectangular-texture-picture-image_15307159.jpg");
+}
+
+.bg-white-transp {
+    background-color: rgba(255, 255, 255, 0.25);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 /*#endregion UTILS */

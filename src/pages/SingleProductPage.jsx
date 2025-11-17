@@ -8,12 +8,12 @@ export default function SingleProductPage() {
     const [currentProduct, setCurrentProduct] = useState({})
     const { id } = useParams()
     const navigate = useNavigate()
-
+    const currentId = Number(id)
 
     useEffect(() => {
         axios(`https://fakestoreapi.com/products/${id}`)
             .then(res => {
-                if (id > 20) {
+                if (currentId > 20 || currentId < 1) {
                     navigate('/error')
                     return;
                 }
@@ -27,29 +27,51 @@ export default function SingleProductPage() {
                 navigate('/error')
             }
             )
-    }, [id, navigate])
+    }, [currentId, navigate])
 
     return (
         <>
-            <main>
-                <div className="container py-5">
+            <main className="bg-img">
+                <div className="container bg-white-transp py-5">
                     <div className="row g-5 py-5">
-                        <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center p-5">
-                            <img className="w-100 img-single-product" src={currentProduct.image} alt="" />
+                        <div className="col-1 d-flex align-items-center">
+                            <button className={`btn border-0 h-100 ${currentId === 1 && "d-none"}`} onClick={() => { currentId > 1 && navigate(`/products/${currentId - 1}`) }}>
+                                <i className="bi bi-arrow-left fs-2"></i>
+                            </button>
                         </div>
-                        <div className="col-12 col-lg-6 p-5 d-flex flex-column align-item-start justify-content-between">
-                            <span className="fs-1 fw-bold">{currentProduct.price} €</span>
-                            <h1>{currentProduct.title}</h1>
-                            <hr />
-                            <span>{currentProduct.category}</span>
-                            <hr />
-                            <span>{currentProduct.description}</span>
-                            <hr />
-                            <span className="pb-5">Quantità residua:{currentProduct.rating?.count}</span>
-                            <button className="btn btn-success py-2 fw-bold">Aggiungi al carrello</button>
-                            <Link to='/products' className="btn btn-dark py-2 fw-bold">Torna alla sezione prodotti</Link>
+                        <div className="col-10">
+                            <div className="row g-5 py-5">
+                                <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center p-5">
+                                    <img className="w-100 img-single-product" src={currentProduct.image} alt="" />
+                                </div>
+                                <div className="col-12 col-lg-6 p-5 d-flex flex-column align-item-start justify-content-between">
+                                    <span className="fs-1 fw-bold">{currentProduct.price} €</span>
+                                    <h1>{currentProduct.title}</h1>
+                                    <hr />
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <span className="fs-4 fw-bold">{currentProduct.category}</span>
+                                        <div className="me-2 ">
+                                            <span className=" fw-bold bg-success p-2 rounded-3 fs-4 me-3">{currentProduct.rating?.rate} </span>
+                                            <i className="bi bi-star-fill text-success fs-2 "></i>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <span className="fs-5 fw-bold">{currentProduct.description}</span>
+                                    <hr />
+                                    <span className="pb-5">Quantità residua:{currentProduct.rating?.count}</span>
+                                    <button className="btn btn-success py-2 fw-bold">Aggiungi al carrello</button>
+                                    <Link to='/products' className="btn btn-dark mt-2 py-2 fw-bold">Torna alla sezione prodotti</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-1 d-flex align-items-center">
+                            <button className={`btn border-0 h-100 ${currentId === 20 && "d-none"}`} onClick={() => { currentId < 20 && navigate(`/products/${currentId + 1}`) }}>
+                                <i className="bi bi-arrow-right fs-2"></i>
+                            </button>
                         </div>
                     </div>
+
+
                 </div>
             </main>
         </>
