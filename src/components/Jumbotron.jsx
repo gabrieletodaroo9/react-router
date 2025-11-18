@@ -12,7 +12,7 @@ export default function Jumbotron({ topShadow }) {
                     Dimentica il superfluo. Su Amazonado, ogni articolo è scelto per la sua eccellenza, durabilità e design.
                 </p>
                 <button className="btn btn-dark bg-first btn-lg px-4 py-3 mt-5 rounded-pill league-gothic fw-bold" type="button">
-                    <Link to="/products">Scopri i prodotti</Link>
+                    <Link className="nav-link" to="/products">Scopri i prodotti</Link>
                 </button>
             </div>
         </div >

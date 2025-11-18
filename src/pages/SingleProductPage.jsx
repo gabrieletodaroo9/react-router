@@ -63,8 +63,8 @@ export default function SingleProductPage() {
                                         <div className="d-flex justify-content-between align-items-center">
                                             <span className="fs-4 fw-bold">{currentProduct.category}</span>
                                             <div className="me-2 ">
-                                                <span className=" fw-bold bg-success p-2 rounded-3 fs-4 me-3">{currentProduct.rating.rate} </span>
-                                                <i className="bi bi-star-fill text-success fs-2 "></i>
+                                                <span className=" fw-bold bg-success text-white py-2 px-3 rounded-3 fs-4 me-3">{currentProduct.rating.rate}<i className="bi bi-star-fill text-white ps-2 fs-4 "></i> </span>
+
                                             </div>
                                         </div>
                                         <hr />

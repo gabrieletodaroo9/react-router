@@ -101,8 +101,10 @@ select {
     background-color: #c9cacb;
 }
 
-.text-third {
-    color: #c9cacb;
+
+
+.text-logo {
+    color: #D98338;
 }
 
 .rotate {
@@ -131,6 +133,7 @@ select {
 
 .nav-link:hover {
     scale: 1.03;
+    color: #D98338;
 }
 
 .btn-danger:hover {
@@ -147,7 +150,7 @@ select {
 }
 
 .col-1:hover {
-    scale: 1.15;
+    scale: 1.25;
 }
 
 .bg-img {
@@ -155,10 +158,11 @@ select {
 }
 
 .bg-white-transp {
+    transition: background-color 0.9s ease-in-out;
     background-color: rgba(255, 255, 255, 0.05);
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
@@ -167,15 +171,24 @@ select {
 /*#region JUMBO */
 
 .jumbotron {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url("./assets/pattern-obj.PNG");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url(https://wallpaper-house.com/data/out/9/wallpaper2you_346209.jpg);
     background-position: top;
     background-repeat: repeat;
     background-color: rgba(0, 0, 0, 0.3) !important;
     letter-spacing: 0.3rem;
     word-spacing: 0.4rem;
+    transition: all 3s ease;
+
+
+    &:hover {
+        transition: all 4s ease;
+        scale: 1.02;
+    }
 
     .btn:hover {
         scale: 1.03;
+        color: #D98338 !important;
+        background-color: #2f2f2f;
     }
 }
 
@@ -252,6 +265,11 @@ select {
 footer {
     ul>*:hover {
         scale: 1.03;
+    }
+
+
+    .footer-link:hover {
+        color: #D98338;
     }
 
     img {
