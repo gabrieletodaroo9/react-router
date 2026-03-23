@@ -1,3 +1,19 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c9fa49f0-8f50-44d9-a3c8-59e5b4bce94b" alt="" width="70%">
-</p>
+# React E-Commerce Store 
+
+Un'applicazione e-commerce multipagina realizzata in **React**, che integra il recupero di dati reali da un'API esterna e un sistema avanzato di navigazione e filtraggio.
+
+Il progetto esplora l'uso delle rotte dinamiche, la gestione dei layout globali e la manipolazione dello stato per offrire un'esperienza di shopping fluida.
+
+
+### Demo
+
+<img src="./src/assets/demo/ecommerce-store.gif" alt="Demo E-commerce" width="800">
+
+
+### Tecnologie utilizzate
+
+* **React**
+* **React Router Dom**
+* **Axios**
+* **FakeStore API**
+* **CSS / Layouts**
